@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: normal;
+    background-color: rgb(15, 12, 110);
+  
+  }
+  
+  button {
+    cursor: pointer;
+  }
+   
+  
+  button,
+  input {
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+
+  .heading{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  .topBanner{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 40px 50px;
+  }
+
+  .topBanner form input {
+    font-size: 2rem;
+    height: 40px;
+    padding: 5px 5px 10px;
+    border-bottom: 1px solid;
+    position: relative;
+  }
+
+  .topBanner form input::placeholder {
+    color: #ffffff8e; 
+  }
+
+  .topBanner form button {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 15px 20px;
+    margin-left: 15px;
+    border-radius: 5px;
+    background: red;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .topBanner form button:hover {
+    background: rgb(178, 30, 30);
+  }
+
+  .error{
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #0cb6e0;
+    font-weight: bold;
+    position: absolute;
+    top: 220px;
+    left: 100px;
+    max-width: 450px;
+    min-height: 40px;
+  }
+
+
+  .nameCountry{
+    text-align: left;
+    margin-left: 200px;
+    margin-top: -30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.85rem;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 10px 50px;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  }
+
+  .temp{
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 102px;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 30px 70px;
+    background-color: #ffffff51;
+    box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .description{
+    text-align: left;
+    margin-left: 205px;
+    margin-top: 30px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  }
+
+  .date{
+    text-align: left;
+    margin-left: 180px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 20px;
+  }
+
+
+
+
+  @media screen and (max-width: 700px) {
+    .heading {
+      font-size: 3rem;
+    }
+    .error{
+      top: 270px;
+      left: 70px;
+    }
+    
+  
+    
+    .topBanner form {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .topBanner form input,
+    .topBanner form button {
+      width: 100%;
+    }
+  
+    .topBanner form button {
+      margin: 20px 0 0 0;
+    }
+    
+    .topBanner form .msg {
+      position: static;
+      max-width: none;
+      min-height: 0;
+      margin-top: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    body {
+      padding: 15px;
+    }
+    .error{
+      top: 285px;
+      left: 85px;
+    }
+    
+  }
+
+  @media screen and (max-width: 458px) {
+    .error{
+      top: 350px;
+      left: 80px;
+    }
+  }
+  
